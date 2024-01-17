@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".SharedPreference"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Alexa"
+        tools:targetApi="31">
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity android:name=".First" />
+        <activity android:name=".Home" />
+        <activity android:name=".Basic" />
+        <activity android:name=".Call" />
+        <activity android:name=".Bluetooth" />
+        <activity android:name=".Locate" />
+        <activity android:name=".Calendar" />
+        <activity android:name=".Alarm" />
+        <activity android:name=".Spotify" />
+        <activity android:name=".Music" />
+        <activity android:name=".Show" />
+        <activity android:name=".Notify" />
+        <activity android:name=".Smart" />
+        <activity android:name=".EQ" />
+        <activity android:name=".Family" />
+        <activity android:name=".Recipe" />
+        <activity android:name=".Donate" />
+        <activity android:name=".Shopping" />
+        <activity android:name=".Tree" />
+        <activity android:name=".Echo" />
+        <activity android:name=".Remote" />
+        <activity android:name=".Food" />
+        <activity android:name=".Settle" />
+        <activity android:name=".Skills" />
+        <activity android:name=".Ring" />
+        <activity android:name=".Robotics" />
+        <activity android:name=".Animals" />
+        <activity android:name=".Birds" />
+        <activity android:name=".Fav" />
+        <activity android:name=".Holidays" />
+        <activity android:name=".Settings" />
+        <activity android:name=".ValueActivity" />
+        <activity android:name="com.tooandunitils.alexa.Custom_List" />
+        <activity android:name="com.tooandunitils.alexa.Custom_Commands" />
+    </application>
+
+</manifest>
